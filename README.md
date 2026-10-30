@@ -1,0 +1,233 @@
+[index (3).html](https://github.com/user-attachments/files/34175385/index.3.html)
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Orienta · Mira a qué carreras llegas</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#FFEFE0;--card:#fff;--ink:#111;--mute:#444;--line:#111;--shc:#111;--acc:#2D5BFF;--onacc:#fff;--y:#FFD43B;--g:#B6F24A;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141414;--card:#1F1F1F;--ink:#F5F1E8;--mute:#BDB8AC;--line:#F5F1E8;--shc:#4A4A4A;--acc:#7C9BFF;--onacc:#111}}
+:root[data-theme="dark"]{--bg:#141414;--card:#1F1F1F;--ink:#F5F1E8;--mute:#BDB8AC;--line:#F5F1E8;--shc:#4A4A4A;--acc:#7C9BFF;--onacc:#111}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.5 'Space Grotesk',system-ui,-apple-system,sans-serif;padding-bottom:env(safe-area-inset-bottom,0px)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+h1,h2,h3,p{margin:0}
+h1{font-size:clamp(34px,6vw,56px);line-height:1.05;letter-spacing:-.035em;font-weight:700}
+h2{font-size:clamp(26px,4vw,34px);letter-spacing:-.02em;font-weight:700}
+.w{max-width:960px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:3px solid var(--line)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-size:22px;font-weight:700}.logo span{color:var(--acc)}
+nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:15px;margin-left:20px}
+mark{background:var(--y);color:#111;padding:0 .12em;border-radius:6px}
+.hero{padding:56px 0 48px}
+.hero p{font-size:19px;color:var(--mute);margin:16px 0 28px;max-width:480px}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.b{font:inherit;font-weight:700;font-size:16px;min-height:52px;padding:0 24px;border:2.5px solid var(--line);border-radius:14px;box-shadow:4px 4px 0 var(--shc);background:var(--card);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.b:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--shc)}
+.b.f{background:var(--acc);color:var(--onacc)}
+section{padding:48px 0;border-top:3px solid var(--line)}
+.sub{color:var(--mute);margin:6px 0 24px}
+.in{font:inherit;font-size:17px;min-height:54px;padding:0 18px;border:2.5px solid var(--line);border-radius:14px;box-shadow:3px 3px 0 var(--shc);background:var(--card);color:var(--ink);min-width:0}
+.in:focus{outline:2px solid var(--acc);outline-offset:2px}
+.fl{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 20px}
+.ch{font:inherit;font-weight:700;font-size:14px;min-height:44px;padding:0 16px;border:2.5px solid var(--line);border-radius:99px;background:var(--card);color:var(--ink);cursor:pointer}
+.ch.on{background:var(--acc);color:var(--onacc)}
+details{background:var(--card);border:2.5px solid var(--line);border-radius:14px;box-shadow:4px 4px 0 var(--shc);padding:0 18px}
+summary{cursor:pointer;font-weight:700;padding:16px 0;min-height:52px}
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;padding-bottom:12px}
+.cg label{display:grid;gap:6px;font-size:14px;font-weight:500;color:var(--mute)}
+.cg .in{min-height:46px;box-shadow:none;background:var(--bg);color:var(--ink)}
+#cr{border-top:2px dashed var(--line);padding:14px 0 18px;font-size:15px}
+#cr b{font-size:26px}
+.gr{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+.c{background:var(--card);border:2.5px solid var(--line);border-radius:18px;box-shadow:5px 5px 0 var(--shc);padding:20px;display:flex;flex-direction:column;gap:6px}
+.c small{color:var(--mute);font-size:13px}.c h3{font-size:20px;line-height:1.2}
+.nt{font-size:22px;font-weight:700;margin-top:4px}.nt span{font-size:12px;font-weight:500;color:var(--mute);margin-left:6px}
+.st{align-self:flex-start;font-size:12px;font-weight:700;padding:3px 10px;border:2px solid var(--line);border-radius:99px;background:var(--card);color:var(--ink)}
+.st.ok{background:var(--g);color:#111}.st.mid{background:var(--y);color:#111}
+.c .b{margin-top:auto;min-height:44px;font-size:14px;box-shadow:3px 3px 0 var(--shc)}
+.c .b.s{background:var(--g);color:#111}
+.note{font-size:13px;color:var(--mute);margin-top:18px}
+.opt{display:block;width:100%;text-align:left;font:inherit;font-weight:500;min-height:56px;padding:0 18px;margin-bottom:10px;border:2.5px solid var(--line);border-radius:14px;background:var(--card);color:var(--ink);cursor:pointer}
+.opt:hover{background:var(--y);color:#111}
+.bar{height:12px;border:2px solid var(--line);border-radius:6px;background:var(--card);margin:8px 0 20px;overflow:hidden}.bar i{display:block;height:100%;background:var(--acc)}
+.pl{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 18px;margin-bottom:10px;background:var(--card);border:2.5px solid var(--line);border-radius:14px;font-weight:700}
+.pl small{display:block;font-weight:400;color:var(--mute);font-size:13px}
+.lk{font:inherit;font-size:14px;background:none;border:0;color:var(--mute);text-decoration:underline;cursor:pointer;min-height:44px}
+textarea{width:100%;min-height:140px;font:15px/1.5 inherit;font-family:inherit;border:2.5px solid var(--line);border-radius:14px;padding:12px;background:var(--card);color:var(--ink);margin-top:12px}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+[hidden]{display:none!important}
+.nomode section{display:none}#pk .b{flex:1 1 260px;min-height:96px;font-size:24px;padding:0 32px;box-shadow:6px 6px 0 var(--shc)}
+.c{cursor:pointer}.c:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--shc)}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:20;display:flex;align-items:center;justify-content:center;padding:20px}
+.pn{background:var(--card);border:2.5px solid var(--line);border-radius:18px;box-shadow:6px 6px 0 var(--shc);padding:24px;max-width:560px;width:100%;max-height:90vh;overflow:auto;position:relative}
+.pn h3{font-size:24px;padding-right:44px}
+.pn .b.s{background:var(--g);color:#111}
+.x{position:absolute;top:10px;right:10px;font:inherit;font-size:28px;width:44px;height:44px;border:0;background:none;color:var(--ink);cursor:pointer}
+</style>
+</head>
+<body>
+<nav><div class="w"><div class="logo">Orient<span>a</span></div><div><a href="#buscar">Buscar</a><a href="#test">Test</a><a href="#plan">Mi plan <span id="pn"></span></a></div></div></nav>
+
+<header class="hero"><div class="w">
+<h1>¿Aún no lo tienes claro? <mark>Es normal.</mark></h1>
+<p>Elige qué quieres estudiar y te mostramos las opciones.</p>
+<div class="row" id="pk"><button class="b f" data-m="uni">Universidad</button><button class="b f" data-m="fp">Formación Profesional (FP)</button></div>
+</div></header>
+
+<section id="buscar"><div class="w">
+<div class="fl" id="md" style="margin:0 0 16px"></div><h2 id="bt">Busca tu carrera</h2>
+<p class="sub" id="bs">Escribe tu nota de admisión sobre 14 o calcúlala abajo.</p>
+<div class="row"><input class="in" id="q" style="flex:2;min-width:200px" placeholder="Buscar carrera, ej. Psicología" aria-label="Buscar carrera"><input class="in" id="nt" style="flex:1;min-width:160px" inputmode="decimal" placeholder="Tu nota, ej. 11,5" aria-label="Tu nota de admisión sobre 14"></div>
+<details id="dt" style="margin-top:14px"><summary>No sé mi nota: calcúlala</summary>
+<div class="cg">
+<label>Media de Bachillerato<input class="in" id="bb" inputmode="decimal" placeholder="Ej. 8,9"></label>
+<label>PAU, fase obligatoria<input class="in" id="pf" inputmode="decimal" placeholder="Ej. 8,4"></label>
+<label>PAU voluntaria, mejor nota<input class="in" id="v1" inputmode="decimal" placeholder="Opcional"></label>
+<label>PAU voluntaria, segunda<input class="in" id="v2" inputmode="decimal" placeholder="Opcional"></label>
+<label>Ponderación<select class="in" id="pp"><option value="0.2">0,2</option><option value="0.1">0,1</option></select></label>
+</div>
+<div id="cr" aria-live="polite">Escribe tu media de Bachillerato.</div></details>
+<div class="fl" id="ch"></div>
+<div class="gr" id="rs"></div>
+<div class="row" style="margin-top:24px"><button class="b" id="mo">Ver más</button></div>
+<p class="note" id="nn">Notas de las universidades públicas de Madrid (primera adjudicación 2026-27, provisionales): por ahora solo las más altas de cada una. Las demás son un rango orientativo.</p>
+</div></section>
+
+<section id="test"><div class="w">
+<h2>¿No sabes qué estudiar?</h2>
+<p class="sub">Cuatro preguntas. Piensa en lo que te gusta, no en lo que «toca».</p>
+<div class="c" style="max-width:560px" id="tq"></div>
+</div></section>
+
+<div class="ov" id="ov" hidden><div class="pn" role="dialog" aria-modal="true" aria-labelledby="pt"><button class="x" id="xx" aria-label="Cerrar">×</button><h3 id="pt"></h3><div id="pb"></div></div></div>
+<section id="plan"><div class="w">
+<h2>Mi plan</h2>
+<p class="sub">Las carreras que guardes aparecen aquí.</p>
+<div id="pls"></div>
+<div class="row" style="margin-top:8px"><button class="b f" id="cp">Copiar resumen para mi familia</button></div>
+<p class="note" id="cm" aria-live="polite"></p>
+<textarea id="sum" class="hid" hidden aria-label="Resumen"></textarea>
+</div></section>
+
+<script>
+(function(){
+var U='Medicina|p|13.053|6 años;Odontología|p|12.728|5 años;Farmacia|p|11.778|5 años;Veterinaria|p|11.777|5 años;Enfermería|p|11.483|4 años;Psicología|p|10.544|4 años;Biología|d|9.869|4 años;Administración de empresas|g|9.433|4 años;Bellas Artes|c|9.275|4 años;Derecho|g|8.154|4 años;Periodismo|c|5|4 años;Ingeniería de datos e IA|d|12.449|4 años;Ingeniería matemática|d|12.448|4 años;Matemáticas y ciencia de datos|d|11.714|4 años;Filosofía, política y economía|g|10.648|4 años;Desarrollo de videojuegos|d|9.651|4 años;Ingeniería de materiales|d|9.511|4 años;Ingeniería de computadores|d|9|4 años;Ingeniería electrónica de comunicaciones|d|8.668|4 años;Ciencia y tecnología de los alimentos|d|8.652|4 años;Filología clásica|c|7.06|4 años;Estudios europeos|g|6.528|4 años;Ingeniería geológica|d|6.42|4 años;Arqueología|g|5|4 años;Ciencias de las religiones|g|5|4 años;Doble grado Matemáticas y Física|d|13.715|Doble grado;Doble grado Informática y Matemáticas|d|13.29|Doble grado;Doble grado Economía y Matemáticas y Ciencia de Datos|g|12.616|Doble grado;Doble grado Economía y Relaciones Internacionales|g|12.608|Doble grado;Doble grado Farmacia y Nutrición|p|12.241|6 años;Doble grado Psicología y Logopedia|p|10.518|Doble grado;Doble grado ADE e Ingeniería Informática|g|10.644|Doble grado;Doble grado Maestro de Infantil y Pedagogía|p|9.88|Doble grado;Doble grado Maestro de Primaria y Pedagogía|p|10.533|Doble grado';
+var R='Fisioterapia|p|10.5|12.5|4 años;Física|d|6|12.5|4 años;Arquitectura|c|6.5|11.5|5 años;Matemáticas|d|6|11.5|4 años;Ingeniería informática|d|5|11|4 años;Ingeniería industrial|d|5|11|4 años;Economía|g|5|11|4 años;Comunicación audiovisual|c|5.5|10.5|4 años;Educación primaria|p|5.5|10|4 años;Diseño|c|5|10|4 años;Marketing|g|5|10|4 años;Educación infantil|p|5|9|4 años;Nutrición humana y dietética|p|8|11|4 años;Logopedia|p|7|10|4 años;Trabajo social|p|5|8|4 años;Pedagogía|p|5|8.5|4 años;Ciencias del deporte|p|8|11|4 años;Educación social|p|5|8.5|4 años;Terapia ocupacional|p|5.5|9|4 años;Podología|p|5|8.5|4 años;Biotecnología|d|9|12.5|4 años;Bioquímica|d|9|12|4 años;Química|d|5.5|9|4 años;Ciencia de datos|d|9|12.5|4 años;Estadística|d|5.5|10|4 años;Geología|d|5|8|4 años;Ciencias ambientales|d|5|8.5|4 años;Ingeniería civil|d|5|8.5|4 años;Ingeniería mecánica|d|5|10|4 años;Ingeniería naval|d|5|9.5|4 años;Ingeniería aeroespacial|d|8|13.4|4 años;Ingeniería de telecomunicación|d|5|10.5|4 años;Ingeniería biomédica|d|9.5|12|4 años;Publicidad y relaciones públicas|c|5|9.5|4 años;Traducción e interpretación|c|5|10|4 años;Estudios ingleses|c|5|9.5|4 años;Relaciones internacionales|g|8|12|4 años;Ciencias políticas|g|5|10|4 años;Turismo|g|5|8|4 años;Criminología|g|5|9|4 años;Sociología|g|5|8|4 años;Historia|g|5|8|4 años;Filosofía|g|5|8|4 años';
+var L=[];
+U.split(';').forEach(function(s){var p=s.split('|');L.push({n:p[0],a:p[1],u:+p[2],d:p[3],v:'UCM'})});
+var V='Doble grado Historia y Estudios Internacionales (UAM)|g|13.142|Doble grado|UAM;Doble grado Ing. Informática y Matemáticas (UAM)|d|12.966|Doble grado|UAM;Medicina (UAM)|p|12.95|6 años|UAM;Ingeniería biomédica (UAM)|d|12.436|4 años|UAM;Ciencia política (UAM)|g|12.326|4 años|UAM;Ing. tecnologías industriales con máster (UC3M)|d|13.503|Grado + máster|UC3M;Doble titulación internacional ADE con ESCP (UC3M)|g|13.5|Doble grado|UC3M;Doble grado Ing. Física e Ing. Tecnologías Industriales (UC3M)|d|13.45|Doble grado|UC3M;Ingeniería aeroespacial (UC3M)|d|13.322|4 años|UC3M;Ingeniería física (UC3M)|d|13.194|4 años|UC3M;Doble grado Estudios Internacionales y Derecho (UC3M)|g|13.175|Doble grado|UC3M;Doble grado Estudios Internacionales y ADE (UC3M)|g|13.01|Doble grado|UC3M;Doble grado Estudios Internacionales y Economía (UC3M)|g|12.86|Doble grado|UC3M;Doble grado Derecho y Relaciones Internacionales (URJC)|g|13.114|Doble grado|URJC;Medicina (URJC)|p|12.889|6 años|URJC;Doble grado Ing. Informática y Matemáticas (URJC)|d|12.823|Doble grado|URJC;Ingeniería industrial (UPM)|d|13.526|Grado + máster|UPM;Ingeniería aeronáutica (UPM)|d|13.468|Grado + máster|UPM;Ingeniería biomédica (UPM)|d|13.326|Grado + máster|UPM;Arquitectura (UPM)|c|13.136|Grado + máster|UPM;Medicina (UAH)|p|12.824|6 años|UAH;Física e instrumentación espacial (UAH)|d|12.153|4 años|UAH;Ingeniería industrial con máster (UAH)|d|11.91|Grado + máster|UAH;Biología sanitaria (UAH)|p|11.806|4 años|UAH';
+V.split(';').forEach(function(s){var p=s.split('|');L.push({n:p[0],a:p[1],u:+p[2],d:p[3],v:p[4]})});
+R.split(';').forEach(function(s){var p=s.split('|');L.push({n:p[0],a:p[1],lo:+p[2],hi:+p[3],d:p[4]})});
+var AL={p:'Salud y personas',d:'Ciencia y tecnología',c:'Creación y comunicación',g:'Gestión y sociedad'};
+var ALU={p:'Salud y personas',d:'Ciencia y tecnología',c:'Creación y comunicación',g:'Gestión y sociedad'},ALF={p:'Sanidad y servicios sociales',d:'Informática e industria',c:'Imagen, diseño y deporte',g:'Administración, comercio y turismo'};
+var NOTE='Notas de las universidades públicas de Madrid (primera adjudicación 2026-27, provisionales): por ahora solo las más altas de cada una. Las demás son un rango orientativo.';
+var F=[];
+'Desarrollo de Aplicaciones Multiplataforma (DAM)|d;Desarrollo de Aplicaciones Web (DAW)|d;Administración de Sistemas Informáticos en Red (ASIR)|d;Sistemas de Telecomunicaciones e Informáticos|d;Mecatrónica Industrial|d;Automatización y Robótica Industrial|d;Mantenimiento Electrónico|d;Sistemas Electrotécnicos y Automatizados|d;Eficiencia Energética y Energía Solar Térmica|d;Proyectos de Edificación|d;Laboratorio de Análisis y de Control de Calidad|d;Química y Salud Ambiental|d;Laboratorio Clínico y Biomédico|p;Imagen para el Diagnóstico y Medicina Nuclear|p;Higiene Bucodental|p;Dietética|p;Radioterapia y Dosimetría|p;Anatomía Patológica y Citodiagnóstico|p;Prótesis Dentales|p;Audiología Protésica|p;Documentación y Administración Sanitarias|p;Educación Infantil|p;Integración Social|p;Promoción de Igualdad de Género|p;Animación Sociocultural y Turística|p;Animaciones 3D, Juegos y Entornos Interactivos|c;Producción de Audiovisuales y Espectáculos|c;Realización de Proyectos Audiovisuales y Espectáculos|c;Sonido para Audiovisuales y Espectáculos|c;Iluminación, Captación y Tratamiento de Imagen|c;Diseño y Edición de Publicaciones Impresas y Multimedia|c;Diseño y Gestión de la Producción Gráfica|c;Enseñanza y Animación Sociodeportiva|c;Acondicionamiento Físico|c;Administración y Finanzas|g;Asistencia a la Dirección|g;Marketing y Publicidad|g;Comercio Internacional|g;Transporte y Logística|g;Gestión de Ventas y Espacios Comerciales|g;Agencias de Viajes y Gestión de Eventos|g;Gestión de Alojamientos Turísticos|g;Dirección de Cocina|g;Dirección de Servicios de Restauración|g;Guía, Información y Asistencias Turísticas|g'.split(';').forEach(function(s){var p=s.split('|');F.push({n:p[0],a:p[1],d:'2 años · con prácticas en empresa',fp:true})});
+var Q=[
+{t:'¿Qué te gustaría hacer en un día de trabajo?',o:[['Resolver problemas con datos','d'],['Ayudar a personas','p'],['Crear o diseñar cosas','c'],['Dirigir proyectos y equipos','g']]},
+{t:'¿Qué asignatura disfrutas más?',o:[['Matemáticas o informática','d'],['Biología o psicología','p'],['Dibujo, arte o lengua','c'],['Economía o historia','g']]},
+{t:'¿Qué hace que tu trabajo tenga sentido?',o:[['Entender cómo funcionan las cosas','d'],['Mejorar la vida de alguien','p'],['Ver algo mío terminado','c'],['Lograr que un plan salga adelante','g']]},
+{t:'¿Cómo prefieres trabajar?',o:[['Solo y concentrado','d'],['Con gente cerca','p'],['Con libertad para proponer','c'],['Coordinando a otras personas','g']]}
+];
+var S={sv:[]},MODE=null,NT=null,SA='all',SR=false,QS='',SH=6,TA=[],TK=0;
+try{var r=localStorage.getItem('orienta3');if(r)S=Object.assign(S,JSON.parse(r))}catch(e){}
+MODE=S.m||null;function save(){try{localStorage.setItem('orienta3',JSON.stringify(S))}catch(e){}}
+var $=function(i){return document.getElementById(i)};
+function f(x){return x.toLocaleString('es-ES',{minimumFractionDigits:1,maximumFractionDigits:3})}
+function pn(v){var x=parseFloat(String(v).replace(',','.'));return isFinite(x)?x:null}
+function nz(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
+function thr(c){return c.u!=null?c.u:c.lo}
+function st(c){var n=NT;if(c.u!=null)return n>=c.u?['ok','Llegas (+'+f(n-c.u)+')',0]:['no','Te faltan '+f(c.u-n),c.u-n];if(n>=c.hi)return['ok','Llegas en la mayoría',0];if(n>=c.lo)return['mid','Depende de la universidad',0];return['no','Te faltan '+f(c.lo-n)+' o más',c.lo-n]}
+function rs(){
+var q=nz(QS.trim()),l=(MODE==='fp'?F:L).filter(function(c){return(SA==='all'||c.a===SA)&&(!q||nz(c.n+' '+(c.v||'')).indexOf(q)>-1)});
+if(NT!=null){if(SR)l=l.filter(function(c){return st(c)[0]!=='no'});var k={ok:0,mid:1,no:2};l.sort(function(a,b){var x=st(a),y=st(b);return k[x[0]]-k[y[0]]||(x[0]==='no'?x[2]-y[2]:thr(b)-thr(a))})}
+var POP=['Psicología','Derecho','Administración de empresas','Medicina','Ingeniería informática','Enfermería'];
+if(!q&&SA==='all'&&NT==null)l.sort(function(a,b){var x=POP.indexOf(a.n),y=POP.indexOf(b.n);return(x<0?99:x)-(y<0?99:y)});
+var tot=l.length,h='';
+l.slice(0,SH).forEach(function(c){var on=S.sv.indexOf(c.n)>-1,s=NT!=null&&!c.fp?st(c):null;
+h+='<div class="c" data-c="'+c.n+'"><small>'+AL[c.a]+'</small><h3>'+c.n+'</h3>'+(s?'<span class="st '+s[0]+'">'+s[1]+'</span>':'')+'<div class="nt">'+(c.fp?'Grado Superior<span>FP</span>':c.u!=null?f(c.u)+'<span>'+(c.v||'UCM')+' 2026-27</span>':f(c.lo)+'–'+f(c.hi)+'<span>orientativa</span>')+'</div><small>'+c.d+'</small><button class="lk" style="align-self:flex-start;min-height:36px;padding:0">'+(SER[c.n]?'Ver evolución':'Ver detalle')+'</button><button class="b'+(on?' s':'')+'" data-n="'+c.n+'">'+(on?'Guardado en mi plan':'Guardar en mi plan')+'</button></div>'});
+$('rs').innerHTML=h||'<p class="sub">No hay resultados. Prueba con otra palabra.</p>';
+$('mo').hidden=tot<=SH;$('mo').textContent='Ver más ('+(tot-SH)+')';
+var ch=[['all','Todas']].concat(Object.keys(AL).map(function(k){return[k,AL[k]]})),fh='';
+ch.forEach(function(c){fh+='<button class="ch'+(SA===c[0]?' on':'')+'" data-a="'+c[0]+'">'+c[1]+'</button>'});
+if(NT!=null)fh+='<button class="ch'+(SR?' on':'')+'" data-r="1">Solo las que alcanzo</button>';
+$('ch').innerHTML=fh;
+$('pn').textContent=S.sv.length?'('+S.sv.length+')':'';
+}
+function calc(){
+var b=pn($('bb').value),o=pn($('pf').value),a=pn($('v1').value),c=pn($('v2').value),p=+$('pp').value,el=$('cr');
+if(b==null||b<0||b>10){el.textContent='Escribe tu media de Bachillerato.';return}
+var est=o==null,fo=est?b:o,nau=0.6*b+0.4*fo,vol=[a,c].filter(function(v){return v!=null&&v>=5&&v<=10}).reduce(function(s,v){return s+v*p},0),nat=Math.round(Math.min(14,nau+vol)*1000)/1000,m='';
+if(est)m+=' Sin nota de PAU: estimo que sacas tu media.';
+if(o!=null&&o<4)m+=' La fase obligatoria debe ser al menos 4.';
+if(nau<5)m+=' Con una nota de acceso menor de 5 no se puede acceder.';
+el.innerHTML='Tu nota de admisión: <b>'+f(nat)+'</b> sobre 14.'+(m?'<br><small style="color:var(--mute)">'+m+'</small>':'');
+NT=nat;$('nt').value=f(nat);SH=6;rs()
+}
+function tq(){
+var el=$('tq');
+if(TK>=Q.length){
+var c={d:0,p:0,c:0,g:0};TA.forEach(function(k){c[k]++});
+var o=Object.keys(c).sort(function(x,y){return c[y]-c[x]}),top=o[0];
+el.innerHTML='<h3>Te encajan más: '+AL[top]+'</h3><p class="sub" style="margin:8px 0 16px">También puede interesarte '+AL[o[1]].toLowerCase()+'.</p><div class="row"><button class="b f" id="tv">Ver esas opciones</button><button class="lk" id="tr">Repetir</button></div>';
+$('tv').onclick=function(){SA=top;SH=6;rs();$('buscar').scrollIntoView()};
+$('tr').onclick=function(){TA=[];TK=0;tq()};return}
+var q=Q[TK],h='<p class="note" style="margin:0">Pregunta '+(TK+1)+' de '+Q.length+'</p><div class="bar"><i style="width:'+(TK/Q.length*100)+'%"></i></div><h3 style="margin-bottom:16px">'+q.t+'</h3>';
+q.o.forEach(function(o){h+='<button class="opt" data-k="'+o[1]+'">'+o[0]+'</button>'});
+el.innerHTML=h;
+}
+function pls(){
+var h='';
+S.sv.forEach(function(n){var c=L.concat(F).filter(function(x){return x.n===n})[0];if(!c)return;
+h+='<div class="pl"><span>'+n+'<small>'+(c.fp?'FP · Grado Superior':c.u!=null?f(c.u)+' · '+(c.v||'UCM')+' 2026-27':f(c.lo)+'–'+f(c.hi)+' · orientativa')+'</small></span><button class="lk" data-d="'+n+'">Quitar</button></div>'});
+$('pls').innerHTML=h||'<p class="note" style="margin:0 0 16px">Aún no has guardado ninguna carrera.</p>'
+}
+function sum(){
+var t='Resumen de mi orientación\n\n';
+if(NT!=null)t+='Mi nota de admisión: '+f(NT)+' sobre 14.\n';
+t+='Estudios que estoy valorando: '+(S.sv.length?S.sv.join(', '):'aún ninguna')+'.\n\nMe ayudaría que lo habláramos con calma, sin prisa por decidir hoy.';
+return t
+}
+var SER={'Psicología':[[2021,10.69],[2022,10.63],[2024,10.29],[2025,10.525],[2026,10.544]],'Ingeniería informática':[[2021,11.44],[2022,11.7],[2023,11.45],[2024,10.91],[2025,10.761]],'Medicina':[[2023,13.31],[2024,13.265],[2025,12.775],[2026,13.053]],'Enfermería':[[2023,11.499],[2024,11.774],[2026,11.483]]};
+function chart(p){var W=520,H=240,l=46,r=24,t=28,b=36,ys=p.map(function(a){return a[1]}),mn=Math.floor((Math.min.apply(0,ys)-0.3)*2)/2,mx=Math.ceil((Math.max.apply(0,ys)+0.3)*2)/2,x0=p[0][0],x1=p[p.length-1][0],X=function(y){return l+(x1===x0?0.5:(y-x0)/(x1-x0))*(W-l-r)},Y=function(v){return t+(mx-v)/(mx-mn)*(H-t-b)},s='<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Evolución de la nota de corte" style="display:block;font-family:inherit">';
+for(var i=0;i<=3;i++){var v=mn+(mx-mn)*i/3,y=Y(v);s+='<line x1="'+l+'" x2="'+(W-r)+'" y1="'+y+'" y2="'+y+'" stroke="var(--mute)" stroke-opacity=".3" stroke-dasharray="4 4"/><text x="'+(l-8)+'" y="'+(y+4)+'" text-anchor="end" font-size="12" fill="var(--mute)">'+f(v)+'</text>'}
+s+='<polyline fill="none" stroke="var(--acc)" stroke-width="3.5" stroke-linejoin="round" points="'+p.map(function(a){return X(a[0])+','+Y(a[1])}).join(' ')+'"/>';
+p.forEach(function(a){s+='<circle cx="'+X(a[0])+'" cy="'+Y(a[1])+'" r="6" fill="var(--y)" stroke="var(--line)" stroke-width="2.5"/><text x="'+X(a[0])+'" y="'+(Y(a[1])-12)+'" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">'+f(a[1])+'</text><text x="'+X(a[0])+'" y="'+(H-12)+'" text-anchor="middle" font-size="12" fill="var(--mute)">'+a[0]+'</text>'});
+return s+'</svg>'}
+function openC(n){var c=L.concat(F).filter(function(x){return x.n===n})[0];if(!c)return;
+if(c.fp){var g=S.sv.indexOf(n)>-1;$('pt').textContent=n;$('pb').innerHTML='<p class="sub" style="margin:4px 0 12px">Ciclo de Grado Superior · 2 años</p><p>Incluye prácticas en empresa. Al terminar puedes trabajar o seguir estudiando en la universidad.</p><p class="note">Cada centro tiene su propia nota de admisión: consúltala en el centro que te interese.</p><div class="row" style="margin-top:16px"><button class="b'+(g?' s':'')+'" id="ps">'+(g?'Guardado en mi plan':'Guardar en mi plan')+'</button></div>';$('ov').hidden=false;$('ps').onclick=function(){var i=S.sv.indexOf(n);if(i>-1)S.sv.splice(i,1);else S.sv.push(n);save();all();openC(n)};$('xx').focus();return}var p=SER[n],s=NT!=null?st(c):null,sv=S.sv.indexOf(n)>-1,h='';
+$('pt').textContent=n;
+h+=(s?'<span class="st '+s[0]+'" style="margin-bottom:8px">'+s[1]+'</span>':'')+'<p class="sub" style="margin:4px 0 12px">Nota de corte '+(c.u!=null?f(c.u)+' en '+(c.v||'la Complutense')+' (2026-27)':f(c.lo)+'–'+f(c.hi)+' (orientativa)')+' · '+c.d+'</p>';
+if(p){var d=p[p.length-1][1]-p[0][1];h+=chart(p)+'<p style="margin:12px 0 0;font-weight:700">'+(Math.abs(d)<0.005?'Se mantiene estable':'Ha '+(d<0?'bajado ':'subido ')+f(Math.abs(d)))+' desde '+p[0][0]+'.</p><p class="note" style="margin:6px 0 0">Complutense, primera adjudicación de cada año. El año indica el inicio del curso (2026 = 2026-27).</p>'}
+else h+='<p>Aún no tenemos el histórico de esta carrera.</p>';
+h+='<div class="row" style="margin-top:16px"><button class="b'+(sv?' s':'')+'" id="ps">'+(sv?'Guardado en mi plan':'Guardar en mi plan')+'</button></div>';
+$('pb').innerHTML=h;$('ov').hidden=false;
+$('ps').onclick=function(){var i=S.sv.indexOf(n);if(i>-1)S.sv.splice(i,1);else S.sv.push(n);save();all();openC(n)};
+$('xx').focus()}
+function md(){$('md').innerHTML='<button class="ch'+(MODE!=='fp'?' on':'')+'" data-m="uni">Universidad</button><button class="ch'+(MODE==='fp'?' on':'')+'" data-m="fp">FP</button>'}
+function setMode(m){MODE=m;S.m=m;save();var fp=m==='fp',A=fp?ALF:ALU;Object.keys(A).forEach(function(k){AL[k]=A[k]});SA='all';SR=false;SH=6;QS='';$('q').value='';if(fp){NT=null;$('nt').value=''}
+$('nt').hidden=fp;$('dt').hidden=fp;$('bt').textContent=fp?'Busca tu ciclo de FP':'Busca tu carrera';$('bs').textContent=fp?'Elige una familia profesional o busca un ciclo de Grado Superior.':'Escribe tu nota de admisión sobre 14 o calcúlala abajo.';$('q').placeholder=fp?'Buscar ciclo, ej. Desarrollo web':'Buscar carrera, ej. Psicología';$('nn').textContent=fp?'Ciclos de Grado Superior: 2 años con prácticas en empresa. Cada centro tiene su propia nota de admisión: consúltala en el centro.':NOTE;document.body.classList.remove('nomode');md();TA=[];TK=0;tq();rs()}
+document.addEventListener('click',function(e){var b=e.target.closest('[data-m]');if(!b)return;setMode(b.getAttribute('data-m'));if(b.closest('#pk'))$('buscar').scrollIntoView()});
+function all(){rs();pls()}
+$('q').addEventListener('input',function(){QS=this.value;SH=6;rs()});
+$('nt').addEventListener('input',function(){var v=pn(this.value);NT=(v!=null&&v>=0&&v<=14)?v:null;SH=6;rs()});
+['bb','pf','v1','v2','pp'].forEach(function(i){$(i).addEventListener('input',calc)});
+$('ch').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;if(b.getAttribute('data-r'))SR=!SR;else SA=b.getAttribute('data-a');SH=6;rs()});
+$('mo').onclick=function(){SH+=6;rs()};
+$('rs').addEventListener('click',function(e){var cd=e.target.closest('.c');if(cd&&!e.target.closest('button[data-n]')){openC(cd.getAttribute('data-c'));return}var b=e.target.closest('button');if(!b)return;var n=b.getAttribute('data-n'),i=S.sv.indexOf(n);if(i>-1)S.sv.splice(i,1);else S.sv.push(n);save();all()});
+$('pls').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var i=S.sv.indexOf(b.getAttribute('data-d'));if(i>-1)S.sv.splice(i,1);save();all()});
+$('tq').addEventListener('click',function(e){var b=e.target.closest('.opt');if(!b)return;TA.push(b.getAttribute('data-k'));TK++;tq()});
+$('cp').onclick=function(){var v=sum(),m=$('cm'),t=$('sum');
+function no(){t.hidden=false;t.value=v;t.select();m.textContent='Copia el texto con Ctrl+C o Cmd+C.'}
+try{navigator.clipboard.writeText(v).then(function(){m.textContent='Resumen copiado'},no)}catch(e){no()}};
+$('xx').onclick=function(){$('ov').hidden=true};$('ov').addEventListener('click',function(e){if(e.target===this)this.hidden=true});document.addEventListener('keydown',function(e){if(e.key==='Escape')$('ov').hidden=true});
+all();tq();if(MODE)setMode(MODE);else document.body.classList.add('nomode');
+})();
+</script>
+</body>
+</html>
